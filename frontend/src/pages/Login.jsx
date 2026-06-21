@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import API from '../api'
+
 
 export default function Login() {
   const [username, setUsername] = useState('')
@@ -177,14 +178,9 @@ export default function Login() {
           </button>
         </div>
 
-        <p style={{
-          textAlign: 'center',
-          color: 'rgba(255,255,255,0.3)',
-          fontSize: '13px',
-          marginTop: '24px'
-        }}>
-          Don't have an account? Register via API docs
-        </p>
+        <p style={{ textAlign: 'center', color: 'rgba(255,255,255,0.3)', fontSize: '13px', marginTop: '24px' }}>
+  Don't have an account? <Link to="/register" style={{ color: '#a5b4fc' }}>Sign up</Link>
+</p>
       </div>
     </div>
   )
