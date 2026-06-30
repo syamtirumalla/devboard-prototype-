@@ -1,4 +1,4 @@
-# DevBoard Prototype
+# DevBoard
 
 A full-stack project management tool with Kanban board.
 
